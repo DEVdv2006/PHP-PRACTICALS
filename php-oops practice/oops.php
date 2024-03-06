@@ -13,7 +13,7 @@ class Student{
 
     }
 
-    function display()
+    public function display()
     {
         echo $this->name."<br>".$this->age."<br>";
         echo $this->enrollment_num."<br>".$this->branch;
