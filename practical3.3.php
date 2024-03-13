@@ -1,5 +1,5 @@
 <?php
-$fibsequence = 5;
+$fibsequence = $_POST["fib"];
 $a = 0;
 $b = 1;
 $temp = 0;

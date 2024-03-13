@@ -1,26 +1,35 @@
 <?php
-$carname = 'Swift';
-if($carname == 'Safari' || $carname == 'Nexon' || $carname == 'Tigor' || $carname == 'Tiago')
+$carname = $_GET['car'];
+$tata=array("Safari","Nexon","Tigor","Tiago");
+$mahindra=array('XUV700','XUV300','Bolero');
+$hyundai=array('i20','Verna','Venue','Creta');
+$suzuki=array('Swift','Alto','Baleno','Brezza');
+foreach($tata as $t)
 {
-  echo $carname." belongs to Tata company ";
+   if($carname==$t)
+   {
+    echo $carname." belongs to Tata company ";
+   }
 }
-elseif($carname == 'XUV700' || $carname == 'XUV300' || $carname == 'Bolero')
+foreach($mahindra as $m)
 {
-  echo $carname." belongs to Mahindra company ";
+   if($carname==$m)
+   {
+    echo $carname." belongs to Mahindra company ";
+   }
 }
-elseif($carname == 'i20' || $carname == 'Verna' || $carname == 'Venue' || $carname == 'Creta')
+foreach($hyundai as $h)
 {
-  echo $carname." belongs to Hyundai company ";
+   if($carname==$h)
+   {
+    echo $carname." belongs to Hyundai company ";
+   }
 }
-
-elseif($carname == 'Swift' || $carname == 'Alto' || $carname == 'Baleno' || $carname == 'Brezza')
+foreach($suzuki as $s)
 {
-  echo $carname." belongs to Suzuki company ";
+   if($carname==$s)
+   {
+    echo $carname." belongs to Suzuki company ";
+   }
 }
-
-else
-{
-  echo $carname." not belongs to any given company ";
-}
-
 ?>

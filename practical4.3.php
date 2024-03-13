@@ -15,9 +15,9 @@ for($i=0;$i<count($matrix1);$i++)
     }
 }
 
-for($i=0;$i<count($matrix1);$i++)
+for($i=0;$i<count($matrix3);$i++)
 {
-    for($j=0;$j<count($matrix2);$j++)
+    for($j=0;$j<count($matrix3);$j++)
     {
        echo $matrix3[$i][$j]."\t"."\t";
     }
